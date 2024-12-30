@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<!--Head Element - Including name as author-->
+<head>
+	<meta charset = "utf-8">
+	<title>Contact Page</title>
+	<meta name = "author" content = "Lekha Mohta">
+	<link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+	<div id = "container">
+	<!-- Header -->
+	<header>
+		<!-- Navigation -->
+		<nav>
+			<input type = "checkbox" id = "check">
+			<!--Menu Icon Goes here-->
+            <label for="check" class = "checkbtn">
+                <img src = "images/menu.jpg" width="80px" height = "80px">
+            </label>
+			<!--Logo Goes Here-->
+            <label class = "logo">
+				<img src="images/LMlogo.jpg"  width="80px" height = "80px" alt="logo">
+			</label>
+            <ul>
+				<li>
+					<a href = pages/index.html>Home</a>
+				</li>
+				<li>
+					<a href = pages/DegreeProgrammePage.html>Degree Programme</a>
+				</li>
+				<li>
+					<a href = pages/SGA&mySkills.html>SGA and mySkills</a>
+				</li>
+				<li>
+					<a href = pages/Quiz.html>Quiz</a>
+				</li>
+			</ul> 
+		</nav>
+	</header>
+
+	<br>
+	
+	<!-- Main Content -->
+	<main class="cpage-main">
+		<h1><strong>CONTACT DETAILS</strong></h1><br>
+		<div class="contact-main">
+			<div class="contact-text">
+				<p>
+					<h2>Contact Us</h2><br>	
+					<p>
+						<b>Lekha Mohta</b> <br>
+						BSc Computer Science <br>
+						Department of Computer Science <br>
+						The University of Sheffield <br>
+						Regent Court <br>
+						211 Portobello<br>
+						Sheffield, UK<br>
+						S1 4DP<br>
+						<br>
+						Email: <a href="dcs@sheffield.ac.uk">dcs@sheffield.ac.uk</a><br>
+						
+
+					</p>
+				</p>
+
+			</div>
+	
+		
+			<div class="contact-form">
+				<h2>Feedback Form</h2><br>
+				<h4>Fill in this form or email <a href="mailto:lmohta1@sheffield.ac.uk">lmohta1@sheffield.ac.uk</a></h4>
+				<p>Please enter any comments or queries that you may have. We'll try to get back as soon as possible</p><br>
+	
+				<form name="myform" action="https://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="get">
+					<input type="hidden" name="recipient" value="lmohta11@sheffield.ac.uk">
+	  
+					<p>
+						<label for="from">Your name:</label>
+						<input name="from" id="from" placeholder="Enter your name." type="text" required autofocus>
+					</p>
+					<br/>
+					<p>
+						<label for="email">Email:</label>
+						<input for="email" id="email" type="email" placeholder="Enter Email" required>
+					</p>
+					<br/>
+					<p>
+						<textarea rows="6" cols="50" placeholder="Type your comments"></textarea>
+					</p>
+					<!-- End form and submit -->
+					<input type="submit" value="SEND">
+					<input type="reset" value="RESET">
+				</form>
+			</div>
+		</div>
+	</main>	
+	
+	</div>
+
+	<!--Footer-->
+	<footer class = "footer">
+		<section>
+			<ul>
+				<li>
+					<a href = "pages/Accessibilty.html">ACCESSIBILITY</a>
+				</li>
+				<li>
+					<a href = "pages/LegalandSecurity.html">LEGAL AND SECURITY</a>
+				</li>
+				<li>
+					<a href = "pages/Design.html">DESIGN</a>
+				</li>
+				<li>
+					<a href = "pages/Testing.html">TESTING</a>
+				</li>
+				<li>
+					<a class = "active" href = "pages/Contact.html">CONTACT</a>
+				</li>
+			</ul>
+		</section>
+		<p>Copyright &copy; Developed by Lekha Mohta. All rights reserved.</p>
+	</footer>
+</body>
+
+</body>
+</html>

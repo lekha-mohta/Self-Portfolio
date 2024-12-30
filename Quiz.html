@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quiz Page</title>
+    <meta name="author" content="Lekha Mohta">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <!-- Navigation -->
+            <nav>
+                <input type="checkbox" id="check">
+                <!--Menu Icon Goes here-->
+                <label for="check" class="checkbtn">
+                    <img src="images/menu.jpg" width="80" height="80">
+                </label>
+                <!--Logo Goes Here-->
+                <label class="logo">
+                    <img src="images/LMlogo.jpg" width="80" height="80" alt="logo">
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="DegreeProgrammePage.html">Degree Programme</a></li>
+                    <li><a href="SGA&mySkills.html">SGA and mySkills</a></li>
+                    <li><a class="active" href="Quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Main Page Content-->
+        <main>
+            <br>
+            <!--QUIZ BOXES-->
+            <div class="quiz-main">
+                <div class="quiz-one">
+                    <img src="images/movies.jpg" alt="Movie" width="500" height="400" onclick="showAnswer(this)">
+                    <br>
+                    <p class="quiz-q"><b>What is my favorite Movie?</b></p>
+                    <div class="quiz-answer"><br>
+                        <b>Titanic</b>
+                    </div>
+                </div>
+
+                <div class="quiz-one">
+                    <img src="images/food.jpg" alt="Food" width="500" height="400" onclick="showAnswer(this)">
+                    <br>
+                    <p class="quiz-q"><b>What is my favorite Food?</b></p>
+                    <div class="quiz-answer"><br>
+                        <b>Cheese Pizza</b>
+                    </div>
+                </div>
+
+                <div class="quiz-one">
+                    <img src="images/music.jpeg" alt="Music" width="500" height="400" onclick="showAnswer(this)">
+                    <br>
+                    <p class="quiz-q"><b>Which instrument do I play?</b></p>
+                    <div class="quiz-answer"><br>
+                        <b>Piano</b>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showAnswer(img) {
+            img.classList.toggle('rotate');
+            const answer = img.nextElementSibling.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+    <!--Footer-->
+	<footer class = "footer">
+		<section>
+			<ul>
+				<li>
+					<a href = "Accessibilty.html">ACCESSIBILITY</a>
+				</li>
+				<li>
+					<a href = "LegalandSecurity.html">LEGAL AND SECURITY</a>
+				</li>
+				<li>
+					<a href = "Design.html">DESIGN</a>
+				</li>
+				<li>
+					<a href = "Testing.html">TESTING</a>
+				</li>
+				<li>
+					<a href = "Contact.html">CONTACT</a>
+				</li>
+			</ul>
+		</section>
+		<p>Copyright &copy; Developed by Lekha Mohta. All rights reserved.</p>
+	</footer>
+</body>
+</html>

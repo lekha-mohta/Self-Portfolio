@@ -1,0 +1,437 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding-bottom: 58px;
+    background-color: #3aafa9;
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+/*FOOTER FORMATTING*/
+
+footer{
+    padding: 20px 0;
+    background-color: #1f4552;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
+ 
+ footer section ul {
+     margin-top: 0;
+     padding: 0;
+     list-style: none;
+     font-size: 18px;
+     line-height: 1.6;
+     margin-bottom: 0;
+ }
+ 
+ footer section ul li a {
+     color: white;
+     text-decoration: none;
+     opacity: 0.8;
+ }
+ 
+ footer section ul li {
+     display: inline-block;
+     padding: 0 15px;
+ }
+ 
+
+/*NAVIGATION BAR */
+
+nav{
+    background: #1f4552;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    top: 0px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover{
+    background: #2b7a78;
+    transition: .5s;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.image{
+    flex-basis: 50%;
+}
+
+.text{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor : pointer;
+    display : none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width : 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nev ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width : 858px){
+    .checkbtn {
+        display: block;
+    }
+    ul{
+        position : fixed;
+        width : 100%;
+        height : 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background : none;
+        color: #2b7a78;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+
+/*HOME PAGE FORMATTING*/
+
+main h1{
+    text-align: center;
+    color: #def2f1;
+}
+
+.main-page{
+    background-color: #def2f1;
+    box-shadow: 0 2px 13px dimgrey;
+    display: flex;
+    max-width: 80%;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.main-text{
+    width : 60%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    text-align: justify;
+    font-size: 15pt;
+}
+
+.main-image{
+    align-content: center;
+    justify-content: center;
+}
+    
+
+/*DEGREE PROGRAM PAGE FORMATTING*/
+.degree-main{
+    background-color: #def2f1;
+    box-shadow: 0 2px 13px dimgrey;
+    display: flex;
+    max-width: 100%;
+    margin: 20px auto 20px auto;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main h2{
+    text-align: center;
+}
+
+.degree-text{
+    text-align: justify;
+    justify-content: center;
+    width: 60%;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 15pt;
+}
+
+.degree-image{
+    align-content: center;
+    justify-content: center;
+}
+
+/*SGA AND MYSKILLS FORMATTING*/
+.SGA-main{
+    background-color: #def2f1;
+    box-shadow: 0 2px 13px dimgrey;
+    display: flex;
+    max-width: 80%;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.SGA-main p {
+    font-size: 15pt;
+}
+
+.SGA-main a{
+    text-decoration: underline;
+}
+
+/*QUIZ PAGE FORMATTING */
+.quiz-main{
+    background-color:#def2f1;
+    box-shadow: 0 2px 13px dimgrey;
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    margin: 20px auto 20px auto;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quiz-one {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+.quiz-answer {
+    display: none;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.quiz-one:hover .quiz-answer{
+    display:block;
+}
+
+.quiz-q{
+    text-align: center;
+    font-size: 20pt;
+}
+
+.rotate {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+/*ACCESSIBILITY PAGE*/
+.access-main{
+    background-color: #def2f1;
+    box-shadow: 0 2px 13px dimgrey;
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    margin: 20px auto 20px auto;
+    width: 90%;
+}
+
+.access h1{
+    text-align: center;
+    color: #def2f1;
+}
+
+.access-main a{
+    text-decoration: underline ;
+}
+
+.access-main p{
+    font-size: 15pt;
+}
+
+/*LEGAL AND SECURITY*/
+.legal-main{
+    background-color: #def2f1;
+    box-shadow: 0 2px 13px dimgrey;
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    margin: 20px auto 20px auto;
+    width: 90%;
+}
+
+.legal-main h1{
+    text-align: center;
+    color: #def2f1;
+}
+
+.legal-text{
+    font-size: 15pt;
+}
+
+.legal-main a{
+    text-decoration: underline;
+}
+
+/*DESIGN PAGE*/
+.design-main{
+    background-color: #def2f1;
+    box-shadow: 0 2px 13px dimgrey;
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    margin: 20px auto 20px auto;
+    width: 90%;
+}
+
+.design-main img{
+    border: 2px solid black;
+    text-align: center;
+}
+
+.design-main h1{
+    text-align: center;
+    color: #def2f1;
+}
+
+.design-text {
+    font-size: 15pt;
+}
+
+.design-text h4{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/*TESTING PAGE FORMATTING*/
+.testing-main{
+    background-color: #def2f1;
+    box-shadow: 0 2px 13px dimgrey;
+    display: flex;
+    max-width: 80%;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.testing-main h4{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.testing-text{
+    font-size: 15pt;
+}
+
+.testing-main img{
+    border: 3pt solid black;
+}
+
+
+/*CONTACT PAGE FORMATTING*/
+
+.cpage-main h1{
+    font-weight: 800;
+}
+
+.contact-main{
+    background-color: #def2f1;
+    box-shadow: 0 2px 13px dimgrey;
+    display: flex;
+    max-width: 80%;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact-text{
+    max-width: 40%;
+    background-color: #9ed8d6;
+    padding: 40px 40px 40px 40px;
+    margin: 20px 40px 20px 40px;
+    box-shadow: 0 2px 13px dimgrey;
+}
+
+.contact-text h2{
+    text-align: center;
+}
+
+.contact-form{
+    background-color: #9ed8d6;
+    max-width: 60%;
+    padding: 40px 40px 40px 40px;
+    margin: 20px 40px 20px 40px;
+    align-items: center;
+    box-shadow: 0 2px 13px dimgrey;
+}
+
+.contact-form h2{
+    text-align: center;
+}
